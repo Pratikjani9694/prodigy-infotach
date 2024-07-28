@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner</title>
+    <style>
+        #video {
+            width: 100%;
+            max-width: 600px;
+        }
+        #canvas {
+            display: none;
+        }
+        #output {
+            margin-top: 20px;
+        }
+        #open-link {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>QR Code Scanner</h1>
+    <video id="video" autoplay></video>
+    <canvas id="canvas"></canvas>
+    <div id="output">
+        <p id="qr-content"></p>
+        <button id="open-link">Open Link</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jsqr/dist/jsQR.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
